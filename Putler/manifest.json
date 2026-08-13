@@ -1,0 +1,26 @@
+{
+    "name": "Vladolf Putler",
+    "version": "1.0",
+    "description": "Just telling the truth",
+    "manifest_version": 3,
+    "author": "Andrea Di Stefano",
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png",
+            "64": "icon.png",
+            "128": "icon.png",
+            "256": "icon.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_end"
+    }]
+}
